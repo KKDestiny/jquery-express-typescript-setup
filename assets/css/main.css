@@ -1,0 +1,130 @@
+body {
+  overflow-x: hidden;
+  background: #222;
+  color: #eee;
+}
+
+.hover-text.inverse {
+  color: #eee;
+}
+.hover-text.inverse:hover {
+  color: #a71dd5 !important;
+}
+.hover-text:hover {
+  opacity: 1 !important;
+  color: #7819d1 !important;
+}
+
+a {
+  color: #888;
+  transition: all 0.3s;
+}
+a:hover {
+  color: #ef4035;
+}
+
+a.btn:not([href]):not([tabindex]) {
+  color: #fff;
+  cursor: pointer;
+}
+
+.text-pink {
+  color: #e74db7;
+}
+.btn-pink {
+  background: #e41aa4;
+  color: #fff;
+  border: 1px #e41aa4 solid;
+  transition: all 0.3s;
+}
+.btn-pink:hover {
+  color: #fff;
+  background: #c40287;
+  border: 1px #c40287 solid;
+}
+.btn-pink.active {
+  color: #fff;
+  background: #c40287;
+  border: 1px #c40287 solid;
+}
+
+.text-purple {
+  color: #660f99;
+}
+.text-purple-light {
+  color: #9b14e9;
+}
+.btn-purple {
+  background: #660f99;
+  color: #fff;
+  border: 1px #520a7c solid;
+  transition: all 0.3s;
+}
+.btn-purple:hover {
+  color: #fff;
+  background: #520a7c;
+  border: 1px #520a7c solid;
+}
+.btn-purple.active {
+  color: #fff;
+  background: #520a7c;
+  border: 1px #520a7c solid;
+}
+
+.small-text {
+  font-size: 0.85em;
+  color: #888;
+}
+
+.main-panel {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 40px 20px 10px 20px;
+  transition: all 0.3s;
+  overflow-y: auto;
+  background: #222;
+}
+.main-panel.hidden-panel {
+  transform: translateX(100%);
+}
+
+@-webkit-keyframes blink {
+  0% {
+    opacity: 0.3;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0.3;
+  }
+}
+
+.msgbox-text.msg-danger {
+  font-weight: 600;
+  animation: blink 0.5s infinite ease-in-out;
+}
+
+.blink {
+  animation: blink 300ms infinite ease-in-out;
+}
+.blink-middle {
+  animation: blink 1000ms infinite ease-in-out;
+}
+.blink-slow {
+  animation: blink 2000ms infinite ease-in-out;
+}
+.focus-blink {
+  font-weight: 600;
+  animation: blink 200ms infinite ease-in-out;
+}
+.focus-shake {
+  font-weight: 600;
+  animation: shake 100ms infinite ease-in-out;
+}
+.focus-none {
+  animation: none;
+}
